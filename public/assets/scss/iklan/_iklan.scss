@@ -1,0 +1,33 @@
+.list-iklan {
+  &__judul,
+  &__deskripsi {
+    font-size: 12px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__harga {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+
+  &__thumbnail {
+    width: 100%;
+
+    margin: auto;
+  }
+}
+
+.iklan-detail {
+  &__profile {
+    p {
+      margin: 0;
+    }
+    .nama-penjual {
+      font-weight: 700;
+      font-size: $p-main;
+    }
+  }
+}
