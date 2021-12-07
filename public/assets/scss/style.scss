@@ -1,153 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-$p-color : #555545;
-$p-main : clamp(11px,0.94vw, 12px);
-// $p-second : clamp(18px,1.04vw, 20px);
-$h1: clamp(18px,1.82vw, 20px);
-// $h2: clamp(22px,1.3vw, 25px);
-$margin-bottom:40px;
-$text-sm :11px;
-body{
-    font-family: 'Roboto', sans-serif;
-    background: #eee;
-    a{
-        text-decoration: none;
-    }
-    p{
-        padding: 0;
-        margin: 0;
-    }
+@import "./base/base";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background: #eee;
+  a {
+    text-decoration: none;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
 }
-.app{
+
+@import "./iklan/iklan";
+@import "./kategori/kategori";
+
+.app {
+  background: #ffffff;
+}
+.main-content {
+  padding: 75px 0;
+}
+nav {
+  .navbar-brand {
     background: #ffffff;
+  }
+  img {
+    width: 50px;
+  }
 }
-.main-content{
-    padding: 75px 0;
-}
-nav{
-    .navbar-brand{
-        background: #ffffff;
+footer {
+  .ddd {
+    width: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 1053;
+  }
+  ul {
+    background: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    a {
+      p {
+        font-size: 11px;
+        color: $p-color;
+      }
     }
-    img{
-        width: 50px;
-    } 
-}
-footer{
-    .ddd{
-        width: auto;
-        position: fixed;
-        bottom: 0  ;
-        z-index: 1053;
-    }
-    ul{
-        background: #ffffff;
-        border: 1px solid rgb(255, 255, 255);
-        a{
-            p{
-                font-size: 11px;
-                color: $p-color;
-            }
-        }
-    }
-    
+  }
 }
 
-.breadcrumb li{
-    font-size: $p-main;
-    color: rgb(206, 206, 206);
-}
-.kategori{
-    margin-bottom: $margin-bottom;
-    &__list{
-        margin-bottom: 10px;
-        &__gambar{
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-            border-radius: 5px;
-            padding: 5px;
-            width: 50px;
-        }
-        &__judul{
-            font-size: $text-sm;
-            color: $p-color;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
-        
-    }
-    h1{
-        font-size: $h2;
-    }
-       
-    
+.breadcrumb li {
+  font-size: $p-main;
+  color: rgb(206, 206, 206);
 }
 
-.list-iklan{
-
-    &__judul,&__deskripsi{
-        font-size: 12px;
-        white-space: nowrap; 
-        width: 100%; 
-        overflow: hidden;
-        text-overflow: ellipsis; 
-    }
-    &__harga{
-        font-size: 14px;
-        font-weight: 600;
-        margin: 5px 0;
-    }
-
-    &__thumbnail{
-        width: 100%;
-        
-        margin: auto;
-    }
+.js .slider-single > div:nth-child(1n + 2) {
+  display: none;
 }
 
-.iklan-detail{
-    &__profile{
-        p{
-            margin: 0;
-        }
-        .nama-penjual{
-            font-weight: 700;
-            font-size: $p-main;
-        }
-    }
+.js .slider-single.slick-initialized > div:nth-child(1n + 2) {
+  display: block;
 }
-
-.js .slider-single > div:nth-child(1n+2) { display: none }
-
-.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
 
 .ss {
-	margin: .5rem;
-	padding: 2%;
-	position: relative;
-	text-align: center;
+  margin: 0.5rem;
+  padding: 2%;
+  position: relative;
+  text-align: center;
 }
 .slider-nav .ss span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.slider-nav .slick-slide { cursor: pointer; }
+.slider-nav .slick-slide {
+  cursor: pointer;
+}
 
 .slick-slide.is-active h3 {
-	color: #c00;
-	background-color: #fff
+  color: #c00;
+  background-color: #fff;
 }
 
 .slick-prev {
-    left: 50px !important;
-    z-index: 1; 
-
+  left: 50px !important;
+  z-index: 1;
 }
-.slick-next{
-    right: 50px !important;
+.slick-next {
+  right: 50px !important;
 }
 
-.slick-arrow:before { 
-    
-    color: #000 !important;
+.slick-arrow:before {
+  color: #000 !important;
 }
