@@ -14,7 +14,7 @@
         <div class="card">
             <?= $this->include("home/iklan/component/iklan_slider"); ?>
         </div>
-        <div class="card">
+        <div class="card card-iklan-detail">
             <div class="card-body">
                 <h2 class="title">Detail</h2>
                 <div class="row">
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="col-lg-4 col-sm-12">
-        <div class="card">
+        <div class="card card-harga-iklan">
             <div class="card-body">
                 <h1>Rp. <?= $iklan->harga_iklan ?></h1>
                 <p><?= $iklan->judul_iklan ?></p>
@@ -40,7 +40,7 @@
         </div>
         <div class="card">
             <div class="card-body">
-                <h4>Deskripsi Penjual</h4>
+                <h4>Penjual</h4>
                 <div class="row iklan-detail__profile">
                     <div class="d-flex justify-align-center mt-3 mb-3">
                         <div>

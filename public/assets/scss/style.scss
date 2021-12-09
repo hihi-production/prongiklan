@@ -14,9 +14,13 @@ body {
 
 @import "./iklan/iklan";
 @import "./kategori/kategori";
+@import "./pencarian/pencarian";
+@import "./buat-iklan/buatiklan";
+@import "./buat-iklan/formiklan";
+@import "./profile-user/profile";
 
 .app {
-  background: #ffffff;
+  background: #f2f4f5;
 }
 .main-content {
   padding: 75px 0;
