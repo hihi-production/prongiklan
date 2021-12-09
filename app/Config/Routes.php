@@ -31,11 +31,17 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Halaman::index');
+$routes->get('/', 'Halaman');
+$routes->get('/iklandetail', 'Halaman::iklandetail');
+$routes->get('/', 'Halaman::kategories');
+$routes->get('/', 'Halaman::search');
+$routes->get('/', 'Halaman::buatiklans');
+$routes->get('/', 'Halaman::fromiklan');
+$routes->get('/', 'Halaman::profile');
+$routes->post('halaman/buatiklan', 'Halaman::buatiklan');
+$routes->post('halaman/create', 'Halaman::create');
 $routes->get('/iklan-detail/(.*)', 'Halaman::tampil_iklan/$1');
-// $routes->get('/', 'Halaman::subkategori');
-// $routes->get('/', 'Halaman::iklan');
-// $routes->get('/', 'Halaman::iklandetail');
+// $routes->get('/', 'Halaman::tampilKategori');
 // $routes->get('/', 'Halaman::login');
 // $routes->get('/', 'Halaman::register');
 
